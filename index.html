@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atomic Chess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="customization">
+        <div id="pieceCustom">
+            <label>Piece Style</label>
+            <select name="Piece Style" id="pieceSet"> 
+                <option value="1"></option>
+            </select>
+        </div>
+        <div id="boardCustom">
+            <label>Board Style</label>
+            <select name="Board Style" id="boardStyle"> 
+                <option value="1"></option> 
+            </select>
+        </div>
+    </div>
+    <div id="board"></div>
+    <p>It is <span id="player"></span> go.</p>
+
+    <script scr="pieces.js"></script>
+    <script scr="app.js"></script>
+</body>

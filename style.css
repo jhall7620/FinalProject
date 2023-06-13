@@ -1,0 +1,44 @@
+.lightsquare{
+
+}
+
+.darksquare{
+
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+#board{
+    width: 640px;
+    height: 640px;
+    background-color: black;
+}
+
+#customization{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+#pieceCustom{
+    min-height: 100px;
+}
+
+#boardCustom{
+    min-height: 100px;
+}
+
+select{
+    width: 64px;
+    height: 64px;
+}
+
+select img{
+    display: block;
+    width: 64px;
+    height: 64px;
+}
