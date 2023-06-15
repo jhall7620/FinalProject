@@ -1,22 +1,4 @@
-.lightsquare{
-
-}
-
-.darksquare{
-
-}
-
-body{
-    display: flex;
-    flex-direction: row;
-}
-
-#board{
-    width: 640px;
-    height: 640px;
-    background-color: black;
-}
-
+/* Dropdown Styling */
 #customization{
     display: flex;
     flex-direction: column;
@@ -24,21 +6,101 @@ body{
     margin-right: 50px;
 }
 
-#pieceCustom{
-    min-height: 100px;
+.dropdown{
+    width: 128px;
+    height: 260px;
 }
 
-#boardCustom{
-    min-height: 100px;
-}
-
-select{
-    width: 64px;
+.dropbtn{
+    cursor: pointer;
     height: 64px;
+    width: 128px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
 }
 
-select img{
-    display: block;
-    width: 64px;
+.dropdown-content{
+    display: none; 
+}
+
+.showPiece {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 196px;
+    max-width: 128px;
+    padding: 0px;
+}
+
+.showBoard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 196px;
+    max-width: 128px;
+    padding: 0px;
+}
+
+.showPiece button{
     height: 64px;
+    width: 64px;
+    padding: 0%;
+}
+
+.showBoard button{
+    height: 64px;
+    width: 128px;
+    padding: 0%;
+}
+
+.board{
+    height: 64px;
+    width: 128px;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.square{
+    height: 64px;
+    width: 64px;
+}
+
+#lightsquare1{
+    background-color: white;
+}
+
+#darksquare1{
+    background-color: black;
+}
+
+#lightsquare2{
+    background-color: tan;
+}
+
+#darksquare2{
+    background-color: brown;
+}
+
+
+
+/* Board */
+.lightsquare{
+    background-color: white;
+}
+
+.darksquare{
+    background-color: black;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+#gameBoard{
+    width: 640px;
+    height: 640px;
+    background-color: black;
 }

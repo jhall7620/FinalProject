@@ -8,21 +8,36 @@
 </head>
 <body>
     <div id="customization">
-        <div id="pieceCustom">
-            <label>Piece Style</label>
-            <select name="Piece Style" id="pieceSet"> 
-                <option value="1"></option>
-            </select>
+        <div class="dropdown">
+            <button onclick="dropdownTogglePiece()" class="dropbtn">Piece Set</button>
+            <div id="pieceSet" class="dropdown-content">
+                <button onclick=""><img src="set1/wn.png" width="64px" height="64px"></button>
+                <button onclick=""><img src="set2/wn.png" width="64px" height="64px"></button>
+            </div>
         </div>
-        <div id="boardCustom">
-            <label>Board Style</label>
-            <select name="Board Style" id="boardStyle"> 
-                <option value="1"></option> 
-            </select>
+        <div class="dropdown">
+            <button onclick="dropdownToggleBoard()" class="dropbtn">Piece Set</button>
+            <div id="boardSet" class="dropdown-content">
+                <button onclick="">
+                    <div class="board">
+                        <div class = "square" id="lightsquare1"></div>
+                        <div class = "square" id="darksquare1"></div>
+                    </div>
+                </button>
+                <button onclick="">
+                    <div class="board">
+                        <div class = "square" id="lightsquare2"></div>
+                        <div class = "square" id="darksquare2"></div>
+                    </div>
+                </button>
+            </div>
         </div>
     </div>
-    <div id="board"></div>
-    <p>It is <span id="player"></span> go.</p>
+    <script src="dropdown.js"></script>
+
+
+    <div id="gameBoard"></div>
+    <p>It is <span id="player"></span>'s turn.</p>
 
     <script scr="pieces.js"></script>
     <script scr="app.js"></script>
