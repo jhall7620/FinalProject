@@ -18,13 +18,13 @@
         <div class="dropdown">
             <button onclick="dropdownToggleBoard()" class="dropbtn">Piece Set</button>
             <div id="boardSet" class="dropdown-content">
-                <button onclick="">
+                <button class="boardBtn" onclick="board1()">
                     <div class="board">
                         <div class = "square" id="lightsquare1"></div>
                         <div class = "square" id="darksquare1"></div>
                     </div>
                 </button>
-                <button onclick="">
+                <button class="boardBtn" onclick="board2()">
                     <div class="board">
                         <div class = "square" id="lightsquare2"></div>
                         <div class = "square" id="darksquare2"></div>
@@ -39,6 +39,6 @@
     <div id="gameBoard"></div>
     <p>It is <span id="player"></span>'s turn.</p>
 
-    <script scr="pieces.js"></script>
-    <script scr="app.js"></script>
+    <script src="pieces.js"></script>
+    <script src="app.js"></script>
 </body>

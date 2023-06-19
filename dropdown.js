@@ -7,11 +7,20 @@ function dropdownToggleBoard() {
 }
 
 function board1(){
-    document.getElementById("lightsquare").style.backgroundColor = "white";
-    document.getElementById("darksquare").style.backgroundColor = "black";
+    let lightsquare = document.getElementsByClassName("lightsquare2")
+    let darksquare = document.getElementsByClassName("darksquare2")
+    lightsquare.classList.remove("lightsquare2")
+    lightsquare.classList.add("lightsquare1")
+    darksquare.classList.remove("darksquare2")
+    darksquare.classList.add("darksquare1")
+    
 }
 
 function board2(){
-    document.getElementById("lightsquare").style.backgroundColor = "tan";
-    document.getElementById("darksquare").style.backgroundColor = "brown";
+    let lightsquare = document.getElementsByClassName("lightsquare1")
+    let darksquare = document.getElementsByClassName("darksquare1")
+    lightsquare.classList.remove("lightsquare1")
+    lightsquare.classList.add("lightsquare2")
+    darksquare.classList.remove("darksquare1")
+    darksquare.classList.add("darksquare2")
 }

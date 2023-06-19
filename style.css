@@ -34,7 +34,7 @@
 
 .showBoard {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     height: 196px;
     max-width: 128px;
@@ -56,42 +56,65 @@
 .board{
     height: 64px;
     width: 128px;
-    padding: 0%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-}
-
-.square{
-    height: 64px;
-    width: 64px;
+    justify-content: start;
 }
 
 #lightsquare1{
     background-color: white;
+    height: 32px;
+    width: 32px;
 }
 
 #darksquare1{
     background-color: black;
+    height: 32px;
+    width: 32px;
 }
 
 #lightsquare2{
     background-color: tan;
+    height: 32px;
+    width: 32px;
 }
 
 #darksquare2{
     background-color: brown;
+    height: 32px;
+    width: 32px;
+}
+
+.boardBtn{
+    border: none;
 }
 
 
 
 /* Board */
-.lightsquare{
+
+.lightsquare1{
     background-color: white;
+    height: 64px;
+    width: 64px;
 }
 
-.darksquare{
+.darksquare1{
     background-color: black;
+    height: 64px;
+    width: 64px;
+}
+
+.lightsquare2{
+    background-color: tan;
+    height: 64px;
+    width: 64px;
+}
+
+.darksquare2{
+    background-color: brown;
+    height: 64px;
+    width: 64px;
 }
 
 body{
@@ -100,7 +123,10 @@ body{
 }
 
 #gameBoard{
-    width: 640px;
-    height: 640px;
+    width: 512px;
+    height: 512px;
+    display: flex;
+    flex-wrap: wrap;
     background-color: black;
+    border: 4mm ridge rgba(139, 72, 8, 0.808);
 }
